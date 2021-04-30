@@ -358,6 +358,11 @@ img.skills {
     text-align: center; 
 }
 
+.aboutme .skilltext {
+    text-align: left;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 1000px) {
     .myimg {
         margin-top: 5%; 

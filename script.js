@@ -1,15 +1,16 @@
-let img = document.getElementById('html');
-let alttext = document.getElementById('html').alt; 
+const img = document.querySelectorAll('.skills'); 
 let skillText = document.querySelector('.skilltext');
 
 
+img.forEach(element => {
+    element.addEventListener('mouseover', e => {
+        let alttext = e.target.getAttribute('alt'); 
+        skillText.innerHTML = 'I have experience with: ' + alttext; 
+        });
+}); 
 
-img.addEventListener("mouseover", function(){
-        skillText.innerHTML = 'I have experience with: ' + alttext
-        }
-    );
-
-img.addEventListener("mouseleave", function(){
-        skillText.innerHTML = ''
-        }
-    );
+img.forEach (element => {
+    element.addEventListener("mouseleave", event => {
+    skillText.innerHTML = ''
+    }); 
+});

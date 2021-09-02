@@ -277,6 +277,9 @@ header {
         height: 700px;  
     } 
 
+    .projecttext {
+        height: 27%; 
+    }
     .project1 {
         grid-area: 1/2/2/3; 
     }
@@ -305,6 +308,7 @@ header {
 .aboutmetext    { 
     width: 70%;
     text-align: center;
+    line-height: 1.4em;
 }
 
 .skillLogos {

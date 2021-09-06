@@ -401,7 +401,7 @@ footer p {
 
 .intro-portfolio {
     width: 80%; 
-    margin: auto; 
+    margin: 50px auto 70px; 
     color:#333333; 
     text-align: center;
 }
@@ -441,7 +441,7 @@ footer p {
 
 /* Container around content */
 .container {
-    padding: 10px 40px;
+    padding: 0.5px 40px;
     position: relative;
     width: 50%;
   }
@@ -453,7 +453,7 @@ footer p {
   
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 50%;  
   }
 
   /* Fix the circle for containers on the right side */
@@ -486,11 +486,11 @@ footer p {
 }
 
     #learned {
-        width: 50%; 
+        width: 60%; 
     }
 
     .content h4 {
-        background-color: #e1ccec;
+        background-color: #89E0A3;
         padding: 5px 10px;
         border-radius: 10px;
     }
@@ -501,12 +501,13 @@ footer p {
     }
 
 /*Collapsible content*/
-.more {
-    display: none; 
+
+.panel {
+    display: none;
 }
 
 button.collBtn {
-    width: 30%; 
+    width: 50%; 
     margin: 10px auto; 
     font-weight: 500; 
     border: solid 1px #FFFFFF; 
@@ -515,6 +516,27 @@ button.collBtn {
 button:hover.collBtn {
     font-size: 1.1em; 
 }
+
+
+
+/*Css code voor max-height js code
+.panel {
+    overflow: hidden; 
+    max-height: 0; 
+    transition: max-height 0.2s; 
+}
+
+button.collBtn {
+    width: 50%; 
+    margin: 10px auto; 
+    font-weight: 500; 
+    border: solid 1px #FFFFFF; 
+}
+
+button:hover.collBtn {
+    font-size: 1.1em; 
+}
+*/
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -531,7 +553,7 @@ button:hover.collBtn {
       }
 
     /* Make sure all circles are at the same spot */
-        .left::after, .right::after {
+        .left::after, .right::after, .middle::after {
             left: 15px;
         }
 
